@@ -1,0 +1,25 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: center;
+    color: goldenrod;
+    font-weight: bold;
+    background-image: url(../img/chino.jpg);
+}
+
+label {
+    display: block;
+}
+
+input  {
+text-align: center;
+border: 5px solid goldenrod;
+color: darkred;
+}
+
+button {
+border: 5px solid goldenrod;
+padding-top: 8px;
+padding-bottom: 8px;
+color: darkred;
+}
