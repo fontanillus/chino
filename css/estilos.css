@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
@@ -5,21 +6,93 @@ body {
     color: goldenrod;
     font-weight: bold;
     background-image: url(../img/chino.jpg);
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;  /* Usamos flexbox para centrar los elementos */
+    justify-content: center;  /* Centrado horizontal */
+    align-items: center;  /* Centrado vertical */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
 label {
     display: block;
+    margin-bottom: 8px;
 }
 
-input  {
-text-align: center;
-border: 5px solid goldenrod;
-color: darkred;
+input {
+    text-align: center;
+    border: 5px solid goldenrod;
+    color: darkred;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
 }
 
 button {
-border: 5px solid goldenrod;
-padding-top: 8px;
-padding-bottom: 8px;
-color: darkred;
+    border: 5px solid goldenrod;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: darkred;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsividad para dispositivos pequeños (móviles) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+        padding-top: 10px;
+    }
+
+    label, input, button {
+        font-size: 14px;
+    }
+
+    input {
+        padding: 12px 0;
+    }
+
+    button {
+        padding: 12px 0;
+    }
+}
+
+/* Tabletas en modo vertical */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .container {
+        width: 70%;
+        margin-top: 10%;
+    }
+
+    input, button {
+        font-size: 18px;
+        padding: 12px 0;
+    }
+
+    label {
+        font-size: 20px;
+    }
+}
+
+/* Tabletas en modo horizontal */
+@media (max-width: 1024px) and (min-width: 768px) and (orientation: landscape) {
+    .container {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    input, button {
+        font-size: 20px;
+        padding: 12px 0;
+    }
 }

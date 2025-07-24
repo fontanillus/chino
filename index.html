@@ -5,27 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Horóscopo Chino</title>
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
-  <h1>Horóscopo Chino</h1>
-  <p><h3>Para calcular tu signo, introduce tu año y mes de nacimiento y presiona el botón <b>CALCULAR:</b></h3></p>
-  <p>
-    <label for="mes">Escribe tu mes de nacimiento:</label>
-    <input type="number" id="mes" min="1" max="12" required>
-  </p>
-  <p>
-    <label for="year">Escribe tu año de nacimiento:</label>
-    <input type="number" id="year" min="1900" max="2100" required>
-  </p>
-  <p><button type="button" onclick="calcular()">CALCULAR</button></p>
-  <p id="signo"></p>
-  <div>
-    <p><img src="./img/imgInicio.jpg" alt="foto" id="imgSigno"></p>
+  <div class="container">
+    <h1>Horóscopo Chino</h1>
+    <p><h3>Para calcular tu signo, introduce tu año y mes de nacimiento y presiona el botón <b>CALCULAR:</b></h3></p>
+    <p>
+      <label for="mes">Escribe tu mes de nacimiento:</label>
+      <input type="number" id="mes" min="1" max="12" required>
+    </p>
+    <p>
+      <label for="year">Escribe tu año de nacimiento:</label>
+      <input type="number" id="year" min="1900" max="2100" required>
+    </p>
+    <p><button type="button" onclick="calcular()">CALCULAR</button></p>
+    <p id="signo"></p>
+    <div>
+      <p><img src="./img/imgInicio.jpg" alt="foto" id="imgSigno"></p>
+    </div>
   </div>
-  
+
   <script src="./js/china.js"></script>
 </body>
 
 </html>
+
+
